@@ -97,10 +97,6 @@ const controlNewRecipe = async function (NewRecipe) {
   }
 };
 
-const newFeature = function () {
-  console.log('Welcome to the application');
-};
-
 const init = function () {
   addRecipeView.addNewRecipeHandler(controlNewRecipe);
   addRecipeView.addHandlerRender(addRecipeForm);
@@ -110,7 +106,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
-  newFeature();
 };
 
 init();
